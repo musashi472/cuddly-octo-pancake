@@ -84,3 +84,22 @@ decreaseBtn.addEventListener('click', () => {
 colorEl.addEventListener('change', (e) => color = e.target.value)
 
 clearEl.addEventListener('click', () => ctx.clearRect(0,0, canvas.width, canvas.height))
+decreaseBtn.addEventListener('click', () => {
+    size -= 5
+
+    if(size < 5) {
+        size = 5
+    }
+
+    updateSizeOnScreen()
+})
+
+decreaseBtn.addEventListener('click', () => {
+    size -= 5
+
+    if(size < 5) {
+        size = 5
+    }
+
+    updateSizeOnScreen()
+})
